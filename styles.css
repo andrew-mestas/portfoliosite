@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron|Open+Sans');
+
+html, body {
+    height: 99%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.name {
+    text-align: center;
+    font-size: 2em;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    font-family: 'Orbitron', sans-serif;
+    padding-top: .5em;
+}
+
+.name nav{
+    font-size: 0.8em;
+}
+
+.name nav a{
+    font-size: 0.8em;
+}
+
+.social{
+    position: fixed;
+    right: 1em;
+    width: 1.4em;
+}
+
+.social a:hover{
+    border-bottom: 1px solid;
+}
+
+nav a {
+    background-color: #0074D9;
+    box-shadow: 0 5px 0 #111111;
+    color: white;
+    padding: 0 .2em .2em;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    background-color: #111111;
+    cursor: pointer;
+}
+
+nav a:active {
+    box-shadow: none;
+    top: 5px;
+}
+
+.name hr{
+    margin-bottom: 0;
+}
+
+.intro{
+    padding-left: 10em;
+    padding-right: 10em;
+    text-align: justify;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+.footer {
+    flex-shrink: 0;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+}
+
+.projects .company:nth-child(2){
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 1px solid darkgray;
+    padding-bottom: 1em;
+}
+
+.projects .company:nth-child(n+3){
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 1px solid darkgray;
+    padding-bottom: 1em;
+    border-top: 1px solid darkgray;
+    padding-top: 1em;
+}
+
+.fill{
+    min-width: 6%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.center{
+    text-align: center;
+}
+
+.below{
+    padding-top: 4em;
+}
+
+.below-2{
+    padding-top: 2em;
+}
+
+.content-body{
+    padding: 4em;
+}
+
+header h1 a {
+    color: #0074D9;
+    text-decoration: none;
+    text-transform: uppercase;
+    box-shadow: -3px 3px 0 darkgray;
+    padding: 6px;
+}
+
+.pic{
+    padding: 0;
+    margin: 0;
+}
+
+.pic img{
+    width: 200px !important;
+    align-self: center;
+}
+
+.top-bottom{
+    border-top: 1px solid darkgrey;
+    border-bottom: 1px solid darkgrey;
+}
+
+.section-title{
+    border-bottom: 1px solid darkgrey;
+    padding-bottom: 1em !important;
+}
+
+.aside-width{
+    width: 16em;
+}
+
+@media screen and (max-width:950px){
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
+    aside h4{
+        text-align: center;
+        margin-bottom: 0px;
+    }
+    ul{
+        display: flex;
+        justify-content: space-around;
+    }
+    .center{
+        padding: 0;
+        align-items: center;
+    }
+    .center-item{
+        padding: 0;
+        align-items: center;
+    }
+    .content-body{
+        padding: 1em;
+    }
+    .projects{
+        padding: 1em;
+    }
+    h1{
+        font-size: 1.2em;
+    }
+    h2{
+        font-size: 1em;
+    }
+    p{
+        font-size: 0.8em;
+    }
+    .name{
+        font-size: 1.6em;
+    }
+    .border li{
+        background: #e50000;
+        font-weight: bold;
+        color: whitesmoke;
+        padding: .4em;
+        border-radius: 8%;
+    }
+    .intro{
+        padding: 0;
+    }
+
+    .pic{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 1em;
+    }
+    .social{
+        right: 1em;
+    }    
+    .aside-width{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:450px){
+    .listwrap{
+        flex-wrap: wrap;
+    }
+    .listwrap li {
+        margin: 6px;
+    }
+}
